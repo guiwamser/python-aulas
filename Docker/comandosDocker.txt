@@ -1,0 +1,25 @@
+docker --version
+docker version
+docker images
+docker rmi "image ID" (deletar imagem)
+docker ps (comandos rodando)
+docker ps -a (todos)
+docker container prune (deletar todos)
+
+docker pull ubuntu
+docker run ubuntu
+docker run -it ubuntu
+ls
+
+apt-get update
+apt-get install python3
+vim ini.py
+
+docker pull postgres
+
+docker rm (deletar container)
+
+docker stop
+docker run
+
+docker run --name postgres-lirinha -e POSTGRES_PASSWORD=123456 -e POSTGRESS_USER=lirinha -d -p 5432:5432 postgres

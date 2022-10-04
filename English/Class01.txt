@@ -1,0 +1,14 @@
+Stranger - Hello 
+Guilherme - Hi
+Stranger - How you doing?
+Guilherme - I am pretty good, and you?
+Stranger - I am fine
+Stranger - What is your name?
+Guilherme - My name is Guilherme and yours?
+Stranger - My name is Stranger
+Guilherme - Where are your from?
+Stranger - Manaus
+Guilherme - How old are you?
+Stranger - I am 33
+Guilherme - What do you do?
+Stranger - I am a dev
