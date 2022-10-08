@@ -1,0 +1,40 @@
+Stranger - Hello 
+Guilherme - Hi
+Stranger - How you doing?
+Guilherme - I am pretty good, and you?
+Stranger - I am fine
+Stranger - What is your name?
+Guilherme - My name is Guilherme and yours?
+Stranger - My name is Stranger
+Guilherme - Where are your from?
+Stranger - Manaus
+Guilherme - How old are you?
+Stranger - I am 33
+Guilherme - What do you do?
+Stranger - I am a dev
+
+
+
+
+3 - write the correct verb to be:
+   
+    1) are
+    2) are
+    3) is 
+    4) is not
+    5) are
+    6) is
+    7) is
+    8) is
+
+4 - write the sentences in the negative and interrogative form:
+
+    1) Patrick isn't short 
+        Is Patrick short?
+    2) They aren't good friends
+        Are they good friends?
+    3) I am not happy
+        Am I happy?
+    4) You are not a students
+        Are you students?
+    

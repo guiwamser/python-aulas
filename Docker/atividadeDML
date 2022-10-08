@@ -1,0 +1,48 @@
+create table pessoas(
+	id int generated always as identity
+	,nome varchar(30) not null
+	,sobreNome varchar(30) not null
+	,idade int null
+);
+
+
+alter table pessoas
+add column CPF varchar(14) not null default '000.000.000-00'
+
+alter table pessoas 
+drop column idade
+
+alter table pessoas 
+rename to funcionário
+
+alter table funcionário 
+add column salário float not null default 0
+
+insert into funcionário (nome,sobrenome)
+	values('Neymar','Jr')
+
+insert into funcionário (nome,sobrenome)
+	values('Vini','Jr')
+
+insert into funcionário (nome,sobrenome)
+	values('James','Harden')
+
+insert into funcionário (nome,sobrenome)
+	values('Cooper','Kupp')
+	
+update funcionário 
+	set salário = 2000
+	where id >= 6 and id <= 10
+	
+alter table funcionário 
+add column idade int null
+
+delete from funcionário 
+	where id = 5
+	
+delete from funcionário 
+	where id = 2
+	
+delete from funcionário 
+	where id = 4
+
