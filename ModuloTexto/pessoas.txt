@@ -1,0 +1,17 @@
+felipe
+felipe
+Guilherme
+Lirinha
+Joao de deus
+Brunao
+felipe
+& C:/Users/guilherme.wamser/AppData/Local/Programs/Python/Python310/python.exe c:/Users/guilherme.wamser/python-aulas/ModuloTexto/mainPessoa.py
+felipe
+Maria
+felipe
+Juju
+LeBron
+James Harden
+Doug
+Marcos
+& C:/Users/guilherme.wamser/AppData/Local/Programs/Python/Python310/python.exe c:/Users/guilherme.wamser/python-aulas/Hotel/mainHotel.py

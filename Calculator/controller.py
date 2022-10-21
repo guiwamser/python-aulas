@@ -20,7 +20,7 @@ def divisao():
 
 
 def somaSalarios(salarioJulho, salarioAgosto, salarioSetembro, salarioOutubro):
-    somaSalarios = salarioJulho + salarioAgosto + salarioSetembro + salarioOutubro
+    return salarioJulho + salarioAgosto + salarioSetembro + salarioOutubro
     print("Salario Julho: {:.2f},\nSalario Agosto: {:.2f},\nSalario Setembro: {:.2f},\nSalario Outubro: {:.2f},\nSoma dos salarios: {:.2f}".format(salarioJulho, salarioAgosto, salarioSetembro, salarioOutubro, somaSalarios))
     
 
