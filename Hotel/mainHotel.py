@@ -13,7 +13,7 @@ def menu():
     else:
         saudacao = "Boa noite, meu consagrado"
 
-    print('-'*20, 'HOTEL', '-'*20 )
+    print('*'*40, 'HOTEL', '*'*40 )
     print("\n{}!\n".format(saudacao))
 
     opcao = 1

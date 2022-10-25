@@ -1,4 +1,5 @@
 def checkin(hospede):
+    print("\nCadastro realizado com sucesso!\n")
     with open('Hotel/hotel.txt', 'a') as arquivo:
         arquivo.write(str(hospede)+'\n')
 
@@ -28,7 +29,7 @@ def checkout(hospedeFind):
             chave=index
             flag = 1
     if flag == 0:
-        print("Hospede não encontrado")
+        print("\nHospede não encontrado\n")
     else:
         try:
             with open('hotel/hotel.txt', 'r') as fr:
@@ -47,7 +48,7 @@ def checkout(hospedeFind):
                         if ptr != chave:
                             fw.write(line)
                         ptr += 1
-            print("Deleted")
+            print("\nCheckout feito com sucesso!\n")
       
         except:
             print("Oops! someting error")

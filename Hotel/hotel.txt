@@ -1,3 +1,5 @@
 {'Nome': 'Guilherme', 'sobreNome': 'Wamser', 'idade': 23, 'cpf': 694760909}
 {'Nome': 'Nicolas', 'sobreNome': 'Lira', 'idade': 19, 'cpf': 5445454545}
 {'Nome': 'Bruno', 'sobreNome': 'Bacin', 'idade': 20, 'cpf': 324123412341243}
+{'Nome': 'Luis Guilherme', 'sobreNome': 'Battiston Marcal', 'idade': 33, 'cpf': 660660669696969}
+{'Nome': 'Juju', 'sobreNome': 'Marcal', 'idade': 23, 'cpf': 565656556}
