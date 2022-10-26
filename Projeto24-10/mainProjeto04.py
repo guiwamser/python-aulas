@@ -24,8 +24,8 @@ def contador(inicio, fim, passo):
 
 contador(10, 1 ,2)
 
-contador(10, 1, 2)
 
 print('-'*35, "Personalize seu for ", '-'*35)
 contador(int(input('inicio: ')), int(input('Fim: ')), int(input('Passo:')))
+
 
