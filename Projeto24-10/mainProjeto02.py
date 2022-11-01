@@ -1,39 +1,64 @@
-#Faça um programa que solicite o nome de um aluno solicite também a inserção das últimas três notas este 
-# cálculo deve realizar a média desse aluno, e através desta condição deve ser impresso o nome do aluno, 
-# as três notas digitadas e a média final, e deve ser impresso se o aluno foi aprovado ou nao!
+#Crie um programa que leia nome, sexo e idade de várias pessoas, guardando os dados de cada pessoa em um 
+# dicionário e todos os dicionários em uma lista. No final, mostre: A) Quantas pessoas foram cadastradas;
+#  B) A média de idade do grupo; C) Uma lista com todas as mulheres; 
+# D) Uma lista com todas as pessoas com idade acima da média.
 
+def menu():
+    
+    dados = {}
+    pessoas = []
+    acumulaIdade = 0
 
-def Media():
+    while True:
+            dados['nome'] = input('NOME: ').strip().capitalize()
+            dados['sexo'] = input('SEXO [M/F]: ').strip().upper()
 
-situacao = 'Reprovado'
+            # Em caso de alternativa incorreta
+            while dados['sexo'] not in ('M', 'F'):
+                print('\nInforme a opção corretamente...')
+                dados['sexo'] = input('SEXO [M/F]: ').strip().upper()
 
-while situacao == "Reprovado":
+            dados['idade'] = int(input('IDADE: '))
+            acumulaIdade += dados['idade']
 
-    nome = str(input("Digite seu nome: "))
-    n1 = int(input("Digite Sua primeira nota: "))
-    n2 = int(input("Digite Sua segunda nota: "))
-    n3 = int(input("Digite sua terceira nota: "))
-    for lista in range(0, 3):
-        
-        lista_notas = [n1, n2, n3] 
-        media = sum(lista_notas)/ len(lista_notas)
-    situacao = 'Reprovado Por favor Tente novamente'
+            # Salvando a cópia dos dados na lista de pessoas
+            pessoas.append(dados.copy())
 
+            print('-' * 30)
+            continuar = input('Deseja continuar? [S/N]: ').strip().upper()
 
-    if media >=7:
-        situacao = 'PARABENS! VOCE FOI APROVADO'
+            # Em caso de opção incorreta
+            while continuar not in ('S', 'N'):
+                print('\nInforme a opção corretamente...')
+                continuar = input('Deseja continuar? [S/N]: ').strip().upper()
+            print('-' * 30)
 
-
-    dicionario_alunos = {'Nome':nome, 'Lista_Notas': lista_notas, 'Media': media, 'Situacao':situacao}
-
-    #--- Impressão de dados do dicionário através de suas chaves
-
-    print(f"{dicionario_alunos['Nome']}, {dicionario_alunos['Lista_Notas']}, {dicionario_alunos['Media']}, {dicionario_alunos['Situacao']}")
-
-
+            # Finalizando a execução do programa
+            if continuar == 'N':
+                break
+                
 
 
     
-print("Voce saiu da sua aplicacao!")
 
-Media()
+    print(f'{" ESTATÍSTICAS ":^30}\n' + '-' * 30)
+    print(f'QUANTIDADE DE CADASTROS: {len(pessoas)}')
+
+    idadeMedia = acumulaIdade / len(pessoas)
+    print(f'\nMÉDIA DE IDADE: {idadeMedia:.1f} anos')
+
+    print('\nMULHERES CADASTRADAS:')
+    for cadastro in pessoas:
+            if cadastro['sexo'] == 'F':
+                print(f'\t--> {cadastro["nome"]}')
+
+    print('\nPESSOAS COM IDADE ACIMA DA IDADE MÉDIA:')
+    for cadastro in pessoas:
+            if cadastro['idade'] >= idadeMedia:
+                for chave, info in cadastro.items():
+                    print(f'\t{chave} -> {info}')
+                print('-' * 30)
+
+print('----- PROGRAMA ENCERRADO -----')
+
+menu()
