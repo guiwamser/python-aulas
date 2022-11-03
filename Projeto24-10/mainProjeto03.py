@@ -1,23 +1,27 @@
-#Faça um programa que tenha uma função chamada contador(),
-# A) De 1 até 10, de 1 em 1
-# B) De 10 até 0, de 2 em 2
-# C) Uma contagem personalizada
-from time import sleep
+#Faça um programa que solicite o nome de um aluno solicite também a inserção das últimas três notas este 
+# cálculo deve realizar a média desse aluno, e através desta condição deve ser impresso o nome do aluno, 
+# as três notas digitadas e a média final, e deve ser impresso se o aluno foi aprovado ou nao!
 
-def contador(inicio, fim, passo):
-    print("-"*35)
-
-    print(f'Contagem de {inicio} ate {fim}, de {passo} em {passo}')
-
-    for cont in range[inicio, fim, passo]:
-        print(cont)
-
-contador('10, 0 ,1')
-
-contador('10, 0, 2')
+from controller import resultado
 
 
-print('-'*35, "Personalize seu for ", '-'*35)
-contador(int(input('inicio: ')), int(input('Fim: ')), int(input('Passo:')))
+def menu():
+    
+    
+    nome = str(input('Digite seu nome:'))
+    n1 = float(input('Digite a primeira nota: '))
+    n2 = float(input('Digite a primeira nota: '))
+    n3 = float(input('Digite a primeira nota: '))
+    n4 = float(input('Digite a primeira nota: '))
+
+    #Variavel Media recebendo funcao resultado
+    media = resultado(n1, n2, n3, n4)
 
 
+    print('-'*35, "Resultado", '-'*35)
+
+    print(f'O Calculo da Media do aluno: {nome} \na primeira nota: {n1} \na segunda nota: {n2} \na terceira nota: {n3} \na quarta nota: {n4} \nO Aluno esta  {media}')
+
+
+
+menu()
