@@ -4,11 +4,11 @@ class PessoaJuridica(Conta):
     __segundo_titular = ''
 
     def __init__(self, titular, cnpj, saldo_inicial):
-        super().__init__('Guilherme', '1111111111', 10000)
+        super().__init__('56987', 'PJ')
         self.titular = titular
         self.cnpj = cnpj
         self.saldo_inicial = saldo_inicial
-        print("Passando pelo construtor da classe pessoa fisica")
+        print("Passando pelo construtor da classe pessoa juridica")
 
 
     @property

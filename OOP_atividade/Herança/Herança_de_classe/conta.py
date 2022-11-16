@@ -6,4 +6,4 @@ class Conta():
         print('Passando pelo construtor da classe mãe')
 
     def __str__(self):
-        return f'{self.numero},{self.tipo}'
+        return f'Número: {self.numero}, Tipo: {self.tipo}'
