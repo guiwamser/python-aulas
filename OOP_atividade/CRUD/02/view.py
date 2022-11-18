@@ -1,4 +1,4 @@
-from model import Conta
+from conta import Conta
 from controller import create, read
 
 abacate = Conta()

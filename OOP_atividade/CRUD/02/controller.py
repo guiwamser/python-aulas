@@ -1,4 +1,4 @@
-from model import Conta
+from conta import Conta
 
 def create(conta):
     contas = open('contas.txt', 'a')
