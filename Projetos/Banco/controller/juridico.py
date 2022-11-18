@@ -22,6 +22,7 @@ def read_pj():
         pessoaJuridica.titular = conta__objeto[2]
         pessoaJuridica.cnpj = conta__objeto[3]
         pessoaJuridica.saldo_inicial = conta__objeto[4]
+        pessoaJuridica.segundo_titular = conta__objeto[5]
 
         lista_contas.append(pessoaJuridica)
 

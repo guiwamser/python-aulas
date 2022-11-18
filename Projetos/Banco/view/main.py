@@ -7,17 +7,17 @@ def menu():
     menu = 1
     while(menu != 0):
         print("="*30, "Menu Principal", "="*30)
-        print("\n1.Pessoa Fisica \n2.Pessoa Juridica")
+        print("\n[1].Pessoa Fisica \n[2].Pessoa Juridica")
         menu_inical = int(input("Digite o Tipo:"))
         match menu_inical:
             case 1:
-                menu = int(input("1.Criar PessoaFisica:> \n2.Listar PessoasFisicas:> \n0.sair:> \n"))
+                menu = int(input("[1].Criar PessoaFisica:> \n[2].Listar PessoasFisicas:> \n0.sair:> \n"))
                 match menu:
                     case 1:
                         pessoafisica = PessoaFisica()
 
                         pessoafisica.titular = str(input("Digite o Nome do 1° titular:> "))
-                        pessoafisica.cpf = int(input("Digite o Cpf:> "))
+                        pessoafisica.cpf = int(input("Digite seu Cpf:> "))
                         pessoafisica.saldo_inicial = float(input("Digite o Saldo Inicial:> "))
 
                         print("Deseja Cadastrar um Segundo Titular:> \n")
@@ -42,7 +42,9 @@ def menu():
                         print("Deseja Cadastrar um Segundo Titular:> \n")
                         v=str(input('sim ou nao:> '))
                         if v=='sim':
-                            pessoajuridica.segundo_titular = str(input("digite o nome do 2° titular: "))
+                            pessoajuridica.segundo_titular = str(input("Digite o nome do 2° titular: "))
                         create_pj(pessoajuridica)
+                         
+
                     case 2:
                         read_pj()
