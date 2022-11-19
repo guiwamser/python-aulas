@@ -57,11 +57,11 @@ def delete(numero_conta):
     contas = open('contas.txt', 'r')
 
     for conta in contas:
-        conta_limpa = conta.stip()
+        conta_limpa = conta.strip()
         conta_objeto = conta_limpa.split(';')
 
-    if conta_update.numero != int(conta_objeto[1]):
-        lista_contas.append(conta)
+    if numero_conta != int(conta_objeto[1]):
+        lista_contas.append(numero_conta)
 
         contas.close()
 
