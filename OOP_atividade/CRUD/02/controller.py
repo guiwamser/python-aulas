@@ -25,3 +25,51 @@ def read():
 
     contas.close
     return lista_contas
+
+
+# Função update
+def update(conta_update:Conta):
+    lista_contas = []
+    # Contas abrindo o arquivo txt
+    contas = open('contas.txt', 'r')
+
+    for conta in contas:
+        conta_limpa = conta.strip()
+        conta_objeto = conta_limpa.split(';')
+
+        if conta_update.numero == int(conta_objeto[1]):
+            lista_contas.append(str(f'{conta_objeto}\n'))
+
+        else:
+            lista_contas.append()
+
+        contas.close()
+
+
+    contas = open('contas.txt', 'a')
+    contas.write(str(lista_contas)+'\n')
+    contas.close()
+
+# Função delete
+def delete(numero_conta):
+    lista_contas = []
+# Contas abrindo o arquivo txt
+    contas = open('contas.txt', 'r')
+
+    for conta in contas:
+        conta_limpa = conta.stip()
+        conta_objeto = conta_limpa.split(';')
+
+    if conta_update.numero != int(conta_objeto[1]):
+        lista_contas.append(conta)
+
+        contas.close()
+
+    contas = open('contas.txt', 'a')
+    contas.write(str(lista_contas))
+    contas.close
+
+
+
+    
+

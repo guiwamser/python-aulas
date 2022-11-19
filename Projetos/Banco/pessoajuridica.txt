@@ -1,0 +1,2 @@
+<bound method Conta.__str__ of <model.pessoaJuridica.PessoaJuridica object at 0x0000022BC96BDF60>>; Andre; ; 321434.0; 
+<bound method Conta.__str__ of <model.pessoaJuridica.PessoaJuridica object at 0x000001B1644CDF60>>; asdafd; ; 21412314.0; MArco

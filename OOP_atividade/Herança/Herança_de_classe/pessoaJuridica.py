@@ -21,7 +21,7 @@ class PessoaJuridica(Conta):
 
 
     def __str__(self, titular, cnpj, saldo_inicial, segundo_titular):
-        return f'super().__str__.() Titular:>{titular}\nCPF:>{cnpj}\nSaldo inicial{saldo_inicial}\nSegundo titular{segundo_titular}'
+        return f'super().__str__.() Titular:>{titular}\nCNPJ:>{cnpj}\nSaldo inicial{saldo_inicial}\nSegundo titular{segundo_titular}'
     
 
 

@@ -1,0 +1,1 @@
+<bound method Conta.__str__ of <model.pessoaFisica.PessoaFisica object at 0x000002545104DF60>>; Guilherme; 234012934124; 1000000; 

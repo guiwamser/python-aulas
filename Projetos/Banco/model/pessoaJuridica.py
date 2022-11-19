@@ -1,11 +1,13 @@
 from model.conta import Conta
 
 class PessoaJuridica(Conta):
-    segundo_titular = ''
-    titular = ''
-    cpf = 0
-    saldo_inicial = 0
+    __segundo_titular = ''
+    __titular = ''
+    __cpf = ''
+    __saldo_inicial = 0
+    
 
+    
     @property
     def segundo_titular(self):
         return self.__segundo_titular
@@ -36,5 +38,6 @@ class PessoaJuridica(Conta):
     def saldo_inicial(self,saldo_inicial):
         self.__saldo_inicial = saldo_inicial
 
+
     def __str__(self):
-        return f'{super().__str__};{self.__titular};{self.__cpf};{self.__saldo_inicial};{self.__segundo_titular}'
+        return f'{super().__str__}; {self.__titular}; {self.__cpf}; {self.__saldo_inicial}; {self.__segundo_titular}'
