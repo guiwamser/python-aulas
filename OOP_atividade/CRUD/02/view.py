@@ -1,18 +1,20 @@
 from conta import Conta
-from controller import create, read
+from controller import create, read, update, delete
 
-abacate = Conta()
-abacate.titular = 'Guilherme Laschewitz Wamser'
-abacate.numero = 123456
-abacate.saldo = 3000.0
+conta = Conta()
+conta.titular = 'Lucas'
+conta.numero = 123456
+conta.saldo = 10000000
 
-create(abacate)
+create(conta)
 
-lista_abacates = read()
+lista_contas = read()
 
-print(lista_abacates)
+print(lista_contas)
+
+update(conta)
 
 print('*'*30)
 
-for c in lista_abacates:
+for c in lista_contas:
     print(c)

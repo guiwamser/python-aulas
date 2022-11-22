@@ -43,9 +43,8 @@ def update(conta_update:Conta):
         else:
             lista_contas.append()
 
-        contas.close()
-
-
+        
+    contas.close()
     contas = open('contas.txt', 'a')
     contas.write(str(lista_contas)+'\n')
     contas.close()
